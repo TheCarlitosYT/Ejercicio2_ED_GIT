@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes and Interfaces","u":"allclasses-index.html"},{"p":"es.iesmz.ed.algoritmes","l":"Cablejat"},{"p":"es.iesmz.ed.algoritmes","l":"Polidivisible"},{"p":"es.iesmz.ed.algoritmes","l":"SumaDescendent"}];updateSearchResults();
