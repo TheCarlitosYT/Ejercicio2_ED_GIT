@@ -2,10 +2,19 @@ package es.iesmz.ed.algoritmes;
 
 import org.junit.jupiter.api.Assertions;
 
+/**
+ * @author Carlos Marin
+ * @version 1.0
+ * */
 import static org.junit.jupiter.api.Assertions.*;
 
 class SumaDescendentTest {
 
+
+    /**
+     *
+     * Tests:
+     * */
     @org.junit.jupiter.api.Test
     void suma() {
         SumaDescendent sc = new SumaDescendent(4578);

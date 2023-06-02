@@ -14,6 +14,10 @@ public class Cablejat {
         this.conectores = StrConec;
     }
 
+
+    /**
+     * @return true si la suma de letras es la misma. Al haber pocas combinaciones se puede hacer sencillamente.
+     * */
     public boolean esPotConnectar() {
         int ConecMasculino = 0;
         int ConecFemenino = 0;
