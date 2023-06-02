@@ -2,7 +2,10 @@ package es.iesmz.ed.algoritmes;
 
 import java.lang.reflect.Array;
 import java.util.*;
-
+/**
+ * @author Carlos Marin
+ * @version 1.0
+ * */
 public class Cablejat {
 
     private String[] conectores;
@@ -25,7 +28,8 @@ public class Cablejat {
                 case "FF" -> ConecFemenino += 2;
             }
         }
-        System.out.println( "Conectores masculinos " + ConecMasculino);
+        /*System.out.println( "Conectores masculinos " + ConecMasculino);
+        System.out.println( "Conectores Femeninos " + ConecFemenino);*/
 
         return ConecMasculino == ConecFemenino;
     }
