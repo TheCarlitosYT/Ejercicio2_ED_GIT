@@ -4,26 +4,30 @@ import java.lang.reflect.Array;
 import java.util.*;
 
 public class Cablejat {
-    private ArrayList<String> connectors;
 
-    public Cablejat(String[] connectors) {
-        this.connectors = new ArrayList<>();
-        this.connectors.addAll(Arrays.asList(connectors));
+    private String[] conectores;
+
+    public Cablejat(String[] StrConec) {
+        this.conectores = StrConec;
     }
 
     public boolean esPotConnectar() {
-        int maleCount = 0;
-        int femaleCount = 0;
+        int ConecMasculino = 0;
+        int ConecFemenino = 0;
 
-        for (String connector : connectors) {
-            if (connector.equals("MM") || connector.equals("MF")) {
-                maleCount++;
-            } else if (connector.equals("FF") || connector.equals("FM")) {
-                femaleCount++;
+        for (String tipoConnector : conectores) {
+            switch (tipoConnector) {
+                case "MM" -> ConecMasculino += 2;
+                case "MF", "FM" -> {
+                    ConecMasculino++;
+                    ConecFemenino++;
+                }
+                case "FF" -> ConecFemenino += 2;
             }
         }
+        System.out.println( "Conectores masculinos " + ConecMasculino);
 
-        return maleCount == femaleCount;
+        return ConecMasculino == ConecFemenino;
     }
 
 }

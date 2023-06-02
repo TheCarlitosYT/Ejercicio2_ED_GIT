@@ -8,5 +8,7 @@ class CablejatTest {
 
     @Test
     void esPotConnectar() {
+        Cablejat Cab = new Cablejat(new String[]{"HM"});
+        assertTrue(Cab.esPotConnectar());
     }
 }
